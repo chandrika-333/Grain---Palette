@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Predict - Rice Type Detection</title>
+  <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+
+  <!-- Nav Bar -->
+  <header class="navbar">
+    <div class="nav-left">RICE TYPE DETECTION</div>
+    <div class="nav-right">
+      <a href="/">Home</a>
+      <a href="/details">Details</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- Upload and Prediction -->
+  <section class="predict-section">
+    <h2>Upload an Image to Predict Rice Type</h2>
+    <form method="POST" action="/predict" enctype="multipart/form-data">
+      <input type="file" name="file" accept="image/*" required><br>
+      <button type="submit" class="btn">Predict</button>
+    </form>
+
+    {% if prediction %}
+      <div class="result-box">
+        <p><strong>Prediction:</strong> {{ prediction }}</p>
+      </div>
+    {% endif %}
+  </section>
+
+</body>
+</html>

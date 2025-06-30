@@ -1,0 +1,83 @@
+<!-- templates/details.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rice Type Detection - About</title>
+  <link rel="stylesheet" href="../static/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <!-- Banner -->
+  <header class="navbar">
+    <div class="nav-left">RICE TYPE DETECTION</div>
+    <div class="nav-right">
+      <a href="/">Home</a>
+      <a href="/predict">Predict</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- Content Section -->
+  <section class="info-section">
+    <h2 class="section-heading">Rice Type Classification Model using CNN</h2>
+    <div class="info-container">
+      <!-- Image on the left -->
+      <div class="info-image">
+        <img src="../static/paddy.jpg" alt="Rice Field in a Paddy">
+      </div>
+
+      <!-- Details on the right -->
+      <div class="info-details">
+        <p>This model is built using a Convolutional Neural Network and trained on labeled images of rice. 
+           It takes an image of a rice grain as input and predicts its type.</p>
+
+        <div class="features">
+          <div class="feature-item">
+            <i class="fas fa-check-shield fa-2x"></i>
+            <div>
+              <h4>Accuracy of the Model</h4>
+              <p>The model gives correct predictions 97 times out of 100.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <i class="fas fa-seedling fa-2x"></i>
+            <div>
+              <h4>Different Types of Rice</h4>
+              <p>This model can classify 5 different rice types:</p>
+              <ul>
+                <li>Arborio</li>
+                <li>Basmati</li>
+                <li>Ipsala</li>
+                <li>Jasmine</li>
+                <li> Karacadag</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <i class="fas fa-database fa-2x"></i>
+            <div>
+              <h4>Dataset Used</h4>
+              <p>The dataset of labeled rice images is obtained from Kaggle.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <i class="fas fa-microchip fa-2x"></i>
+            <div>
+              <h4>Technical Architecture</h4>
+              <p>The model is trained using a Convolutional Neural Network.</p>
+              <img src="../static/architecture.png" alt="CNN Model Architecture Diagram" width='100%'>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
